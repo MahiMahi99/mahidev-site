@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0446f49e86.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/contactdev.css">
+    <title>Mahi Dev</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="https://mahicorp.fr/mahidev/index.html">
+                <div class="logo-container">
+                    <img src="mahidev.svg" height="50">
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <div class="brutalist-burger"></div>
+                <div class="brutalist-burger"></div>
+                <div class="brutalist-burger"></div>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://mahicorp.fr/mahidev/index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://mahicorp.fr/mahidev/portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://mahicorp.fr/mahidev/apropos.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://mahicorp.fr/mahidev/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-around">
+            <!-- Colonne gauche (vide pour le moment) -->
+            <div class="col-12 col-md-5">
+                <div class="card shadow mb-4">
+    <div class="card-header bg-info text-white">
+        <h4 class="mb-0">
+            <i class="bi bi-lightbulb me-2"></i>
+            Avant de vous lancer...
+        </h4>
+    </div>
+    <div class="card-body">
+        <div class="accordion" id="accordionHelper">
+            
+            <!-- Section 1: Conseils pas conseils -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingConseils">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConseils" aria-expanded="true" aria-controls="collapseConseils">
+                        <i class="bi bi-exclamation-triangle text-warning me-2"></i>
+                        <strong>Avant de remplir ce formulaire</strong>
+                    </button>
+                </h2>
+                <div id="collapseConseils" class="accordion-collapse collapse show" aria-labelledby="headingConseils" data-bs-parent="#accordionHelper">
+                    <div class="accordion-body">
+                        <div class="alert alert-light border-start border-warning border-4">
+                            <h6><i class="bi bi-emoji-wink me-2"></i>Petits conseils d'une dev qui a tout vu :</h6>
+                            <ul class="mb-0">
+                                <li><strong>Spoiler :</strong> "Je veux un site comme Amazon" n'est pas un brief 😅</li>
+                                <li><strong>Budget réaliste :</strong> Un site à 50€, c'est comme une Ferrari à 500€... ça sent l'arnaque !</li>
+                                <li><strong>Délai magique :</strong> "Pour hier" n'est pas un délai, même avec une machine à remonter le temps</li>
+                                <li><strong>Contenu :</strong> "Mettez du lorem ipsum, on verra après" = recette pour un site qui reste en lorem ipsum. Exemple : le lorem sur le site que vous venez de visiter est resté inchangé depuis la création du site en 2025 😬</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Présentation -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingPresentation">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePresentation" aria-expanded="false" aria-controls="collapsePresentation">
+                        <i class="bi bi-person-circle text-primary me-2"></i>
+                        <strong>Moi, mes sites et mes deadlines</strong>
+                    </button>
+                </h2>
+                <div id="collapsePresentation" class="accordion-collapse collapse" aria-labelledby="headingPresentation" data-bs-parent="#accordionHelper">
+                    <div class="accordion-body">
+                        <p>Salut ! 👋 Je suis une développeuse web qui transforme vos idées (parfois un peu floues, parfois très précises) en sites qui marchent vraiment.</p>
+                        
+                        <div class="row text-center mb-3">
+                            <div class="col-4">
+                                <div class="bg-light p-3 rounded">
+                                    <i class="bi bi-code-slash text-primary fs-4"></i>
+                                    <div class="small mt-1">Code propre</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bg-light p-3 rounded">
+                                    <i class="bi bi-clock text-success fs-4"></i>
+                                    <div class="small mt-1">Dans les temps</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bg-light p-3 rounded">
+                                    <i class="bi bi-chat-dots text-info fs-4"></i>
+                                    <div class="small mt-1">Bonne comm'</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="mb-0">
+                            <small class="text-muted">
+                                Entre deux lignes de code, j'aime bien discuter de vos projets autour d'un café (virtuel ou non) ! 
+                                Promis, je ne parle pas que de CSS et de balises HTML 😄
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: FAQ -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFAQ">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFAQ" aria-expanded="false" aria-controls="collapseFAQ">
+                        <i class="bi bi-question-circle text-warning me-2"></i>
+                        <strong>FAQ express</strong>
+                    </button>
+                </h2>
+                <div id="collapseFAQ" class="accordion-collapse collapse" aria-labelledby="headingFAQ" data-bs-parent="#accordionHelper">
+                    <div class="accordion-body">
+                        <div class="accordion accordion-flush" id="accordionFAQ">
+                            
+                            <div class="accordion-item border-0">
+                                <h6 class="accordion-header" id="faq1">
+                                    <button class="accordion-button collapsed py-2 px-0 bg-transparent border-0 shadow-none text-start" type="button" data-bs-toggle="collapse" data-bs-target="#answer1">
+                                        <small><strong>Combien ça coûte un site web ?</strong></small>
+                                    </button>
+                                </h6>
+                                <div id="answer1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body px-0 py-2">
+                                        <small class="text-muted">Entre 150€ et 3000€ selon vos besoins. Un site vitrine simple vs un e-commerce complet, ce n'est pas le même sport ! Le slider budget dans le formulaire vous donnera une idée 😉</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0">
+                                <h6 class="accordion-header" id="faq2">
+                                    <button class="accordion-button collapsed py-2 px-0 bg-transparent border-0 shadow-none text-start" type="button" data-bs-toggle="collapse" data-bs-target="#answer2">
+                                        <small><strong>Combien de temps pour faire mon site ?</strong></small>
+                                    </button>
+                                </h6>
+                                <div id="answer2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body px-0 py-2">
+                                        <small class="text-muted">Entre 1 et 6 semaines selon la complexité. Et non, je ne peux pas faire un site complet en 24h, même avec 47 cafés ! ☕</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0">
+                                <h6 class="accordion-header" id="faq3">
+                                    <button class="accordion-button collapsed py-2 px-0 bg-transparent border-0 shadow-none text-start" type="button" data-bs-toggle="collapse" data-bs-target="#answer3">
+                                        <small><strong>Vous faites aussi le contenu (textes, photos) ?</strong></small>
+                                    </button>
+                                </h6>
+                                <div id="answer3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body px-0 py-2">
+                                        <small class="text-muted">Je peux vous aider pour structurer vos contenus, mais vous restez l'expert de votre activité ! Pour les photos, j'ai mes petites adresses 📸</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0">
+                                <h6 class="accordion-header" id="faq4">
+                                    <button class="accordion-button collapsed py-2 px-0 bg-transparent border-0 shadow-none text-start" type="button" data-bs-toggle="collapse" data-bs-target="#answer4">
+                                        <small><strong>Mon site sera-t-il responsive (mobile-friendly) ?</strong></small>
+                                    </button>
+                                </h6>
+                                <div id="answer4" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body px-0 py-2">
+                                        <small class="text-muted">Evidemment ! En 2025, un site non-responsive, c'est comme un smartphone sans internet. Tous mes sites s'adaptent parfaitement aux mobiles, tablettes et ordinateurs 📱</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0">
+                                <h6 class="accordion-header" id="faq5">
+                                    <button class="accordion-button collapsed py-2 px-0 bg-transparent border-0 shadow-none text-start" type="button" data-bs-toggle="collapse" data-bs-target="#answer5">
+                                        <small><strong>Et après la livraison, vous m'abandonnez ?</strong></small>
+                                    </button>
+                                </h6>
+                                <div id="answer5" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body px-0 py-2">
+                                        <small class="text-muted">Jamais ! Formation à l'utilisation, maintenance, mises à jour... Je reste disponible. Votre réussite, c'est aussi la mienne ! 🤝</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Pourquoi moi -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingPourquoi">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePourquoi" aria-expanded="false" aria-controls="collapsePourquoi">
+                        <i class="bi bi-heart text-danger me-2"></i>
+                        <strong>Pourquoi moi ?</strong>
+                    </button>
+                </h2>
+                <div id="collapsePourquoi" class="accordion-collapse collapse" aria-labelledby="headingPourquoi" data-bs-parent="#accordionHelper">
+                    <div class="accordion-body">
+                        <div class="alert alert-success border-0">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-patch-check-fill text-success me-2"></i>
+                                <strong>Transparence totale</strong>
+                            </div>
+                            <small>Pas de jargon technique incompréhensible, pas de frais cachés. On discute, on se comprend, on avance ensemble.</small>
+                        </div>
+
+                        <div class="alert alert-info border-0">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-people-fill text-info me-2"></i>
+                                <strong>À taille humaine</strong>
+                            </div>
+                            <small>Vous avez mon numéro, pas celui d'un centre d'appel. Chaque projet est unique, chaque client aussi.</small>
+                        </div>
+
+                        <div class="alert alert-warning border-0 mb-0">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="bi bi-rocket-takeoff text-warning me-2"></i>
+                                <strong>Passion du job</strong>
+                            </div>
+                            <small>J'adore ce que je fais, et ça se voit ! Votre projet, c'est mon prochain défi à relever avec enthousiasme.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+            
+            <!-- Colonne droite avec le formulaire -->
+            <div class="col-12 col-md-6">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0">Formulaire de Contact</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="contactForm" novalidate>
+                            <!-- Section 1 - Informations personnelles -->
+                            <div class="mb-4">
+                                <h5 class="text-primary border-bottom pb-2">Informations personnelles</h5>
+                                
+                                <div class="row mb-3">
+                                    <div class="col-md-8">
+                                        <label for="nomPrenom" class="form-label">Nom/Prénom <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="nomPrenom" required>
+                                        <div class="invalid-feedback">
+                                            Veuillez saisir votre nom et prénom.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="pronoms" class="form-label">Pronoms <small class="text-muted">(optionnel)</small></label>
+                                        <input type="text" class="form-control" id="pronoms" placeholder="il/elle, iel...">
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-3">
+                                    <div class="col-md-7">
+                                        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">
+                                            Veuillez saisir une adresse email valide.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <label for="telephone" class="form-label">Téléphone <small class="text-muted">(optionnel)</small></label>
+                                        <input type="tel" class="form-control" id="telephone" placeholder="06 12 34 56 78">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 2 - Type de demande -->
+                            <div class="mb-4">
+                                <h5 class="text-primary border-bottom pb-2">Type de demande</h5>
+                                
+                                <div class="mb-3">
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio" name="typeDemande" id="renseigne" value="renseigne">
+                                        <label class="form-check-label" for="renseigne">
+                                            <strong>Je me renseigne</strong><br>
+                                            <small class="text-muted">Vous avez une idée de site en tête mais vous voulez d'abord savoir combien ça coûterait et ce que ça implique</small>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio" name="typeDemande" id="projetConcret" value="concret">
+                                        <label class="form-check-label" for="projetConcret">
+                                            <strong>J'ai un projet concret</strong><br>
+                                            <small class="text-muted">Vous savez exactement ce dont vous avez besoin et vous êtes prêt·e à lancer votre projet</small>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio" name="typeDemande" id="contact" value="contact">
+                                        <label class="form-check-label" for="contact">
+                                            <strong>Prise de contact/questions générales</strong><br>
+                                            <small class="text-muted">Vous voulez juste discuter, poser des questions ou faire connaissance</small>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio" name="typeDemande" id="autre" value="autre">
+                                        <label class="form-check-label" for="autre">
+                                            <strong>Autre</strong><br>
+                                            <small class="text-muted">Votre demande ne rentre dans aucune case</small>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 3 - Détails du projet (conditionnel) -->
+                            <div id="detailsProjet" class="mb-4" style="display: none;">
+                                <h5 class="text-primary border-bottom pb-2">Détails du projet</h5>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">Type de site souhaité</label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="siteVitrine" value="vitrine">
+                                                <label class="form-check-label" for="siteVitrine">Site vitrine</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="onePage" value="onepage">
+                                                <label class="form-check-label" for="onePage">One-page</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="landingPage" value="landing">
+                                                <label class="form-check-label" for="landingPage">Landing page</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="ecommerce" value="ecommerce">
+                                                <label class="form-check-label" for="ecommerce">E-commerce</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="autreSite" value="autre">
+                                                <label class="form-check-label" for="autreSite">Autre</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="budgetSlider" class="form-label">Budget approximatif : <span id="budgetValue">150€</span></label>
+                                    <input type="range" class="form-range" id="budgetSlider" min="150" max="3000" value="150" step="50">
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary budget-btn" data-value="150">150€</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary budget-btn" data-value="500">500€</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary budget-btn" data-value="1000">1000€</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary budget-btn" data-value="1500">1500€</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary budget-btn" data-value="2000">2000€</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary budget-btn" data-value="3000">3000€</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="projetAssociatif" value="associatif">
+                                        <label class="form-check-label" for="projetAssociatif">
+                                            Projet associatif
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="delai" class="form-label">Délai souhaité</label>
+                                    <input type="text" class="form-control" id="delai" placeholder="Ex: 2 semaines, fin du mois, pas pressé...">
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="descriptionProjet" class="form-label">Description du projet</label>
+                                    <textarea class="form-control" id="descriptionProjet" rows="4" placeholder="Décrivez votre projet, vos besoins, vos attentes..."></textarea>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <button type="button" class="btn btn-warning position-relative" id="urgenceBtn" data-bs-toggle="tooltip" data-bs-placement="top" title="Si vous souhaitez un site en ligne dans les 72 prochaines heures, cliquez-moi !">
+                                        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                        <span id="urgenceText">URGENCE</span>
+                                        <span id="urgenceBadge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display: none;">
+                                            Activée
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Section 4 - Champ libre (conditionnel) -->
+                            <div id="champLibre" class="mb-4" style="display: none;">
+                                <h5 class="text-primary border-bottom pb-2">Votre demande</h5>
+                                
+                                <div class="mb-3">
+                                    <label for="demandeLibre" class="form-label">Décrivez votre demande</label>
+                                    <textarea class="form-control" id="demandeLibre" rows="4" placeholder="Expliquez-nous votre demande en détail..."></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Section 5 - Préférences de communication -->
+                            <div class="mb-4">
+                                <h5 class="text-primary border-bottom pb-2">Préférences de communication</h5>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">Comment préférez-vous que je vous recontacte ?</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="prefEmail" value="email">
+                                        <label class="form-check-label" for="prefEmail">
+                                            <i class="bi bi-envelope me-2"></i>Email
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="prefWhatsapp" value="whatsapp">
+                                        <label class="form-check-label" for="prefWhatsapp">
+                                            <i class="bi bi-whatsapp me-2"></i>Message WhatsApp
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="prefTelephone" value="telephone">
+                                        <label class="form-check-label" for="prefTelephone">
+                                            <i class="bi bi-telephone me-2"></i>Appel téléphonique
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bouton d'envoi -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="bi bi-send me-2"></i>Envoyer ma demande
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <!-- Footer -->
+    <footer class=" footer">
+        <div class="container">
+            <div class="footer-content">
+                <nav class="footer-nav">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#apropos">À propos</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://mahicorp.fr/" target="_blank">Mahi Corp</a>
+                </nav>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Malt">
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mahi Dev - Tous droits réservés | Une création <a href="https://mahicorp.fr/" target="_blank">Mahi Corp</a></p>
+            </div>
+        </div>
+    </footer>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // Variables globales
+        let urgenceActivee = false;
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+
+        // Gestion du slider de budget
+        const budgetSlider = document.getElementById('budgetSlider');
+        const budgetValue = document.getElementById('budgetValue');
+        const budgetButtons = document.querySelectorAll('.budget-btn');
+
+        budgetSlider.addEventListener('input', function() {
+            budgetValue.textContent = this.value + '€';
+        });
+
+        budgetButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const value = this.getAttribute('data-value');
+                budgetSlider.value = value;
+                budgetValue.textContent = value + '€';
+            });
+        });
+
+        // Gestion des sections conditionnelles
+        const typeDemandeRadios = document.querySelectorAll('input[name="typeDemande"]');
+        const detailsProjet = document.getElementById('detailsProjet');
+        const champLibre = document.getElementById('champLibre');
+
+        typeDemandeRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                // Masquer toutes les sections conditionnelles
+                detailsProjet.style.display = 'none';
+                champLibre.style.display = 'none';
+
+                // Afficher la section appropriée
+                if (this.value === 'renseigne' || this.value === 'concret') {
+                    detailsProjet.style.display = 'block';
+                } else if (this.value === 'autre' || this.value === 'contact') {
+                    champLibre.style.display = 'block';
+                }
+            });
+        });
+
+        // Gestion du bouton urgence
+        const urgenceBtn = document.getElementById('urgenceBtn');
+        const urgenceText = document.getElementById('urgenceText');
+        const urgenceBadge = document.getElementById('urgenceBadge');
+
+        urgenceBtn.addEventListener('click', function() {
+            if (!urgenceActivee) {
+                // Activer l'urgence
+                urgenceActivee = true;
+                this.classList.remove('btn-warning');
+                this.classList.add('btn-danger');
+                urgenceText.textContent = 'URGENCE ACTIVÉE';
+                urgenceBadge.style.display = 'inline';
+                
+                // Changer le tooltip
+                const tooltip = bootstrap.Tooltip.getInstance(this);
+                tooltip.setContent({'.tooltip-inner': 'Urgence activée ! Votre demande sera traitée en priorité.'});
+                
+                alert('Mode URGENCE activé ! Votre demande sera traitée en priorité dans les 72 heures.');
+            } else {
+                // Désactiver l'urgence
+                urgenceActivee = false;
+                this.classList.remove('btn-danger');
+                this.classList.add('btn-warning');
+                urgenceText.textContent = 'URGENCE';
+                urgenceBadge.style.display = 'none';
+                
+                // Remettre le tooltip original
+                const tooltip = bootstrap.Tooltip.getInstance(this);
+                tooltip.setContent({'.tooltip-inner': 'Si vous souhaitez un site en ligne dans les 72 prochaines heures, cliquez-moi !'});
+            }
+        });
+
+        // Validation du formulaire
+        const form = document.getElementById('contactForm');
+        
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Validation Bootstrap
+            if (!form.checkValidity()) {
+                event.stopPropagation();
+                form.classList.add('was-validated');
+                return;
+            }
+
+            // Validation personnalisée
+            let isValid = true;
+            let errorMessage = '';
+
+            // Vérifier qu'un type de demande est sélectionné
+            const typeDemandeSelected = document.querySelector('input[name="typeDemande"]:checked');
+            if (!typeDemandeSelected) {
+                isValid = false;
+                errorMessage += 'Veuillez sélectionner un type de demande.\n';
+            }
+
+            // Vérifier qu'au moins une préférence de communication est cochée
+            const preferencesComm = document.querySelectorAll('input[type="checkbox"][id^="pref"]:checked');
+            if (preferencesComm.length === 0) {
+                isValid = false;
+                errorMessage += 'Veuillez sélectionner au moins une préférence de communication.\n';
+            }
+
+            if (!isValid) {
+                alert('Erreur de validation :\n' + errorMessage);
+                return;
+            }
+
+            // Collecter les données du formulaire
+            const formData = collectFormData();
+            console.log('Données du formulaire:', formData);
+            
+            alert('Formulaire soumis avec succès ! (Consultez la console pour voir les données)');
+        });
+
+        // Fonction pour collecter toutes les données du formulaire
+        function collectFormData() {
+            const data = {
+                // Informations personnelles
+                nomPrenom: document.getElementById('nomPrenom').value,
+                pronoms: document.getElementById('pronoms').value,
+                email: document.getElementById('email').value,
+                telephone: document.getElementById('telephone').value,
+                
+                // Type de demande
+                typeDemande: document.querySelector('input[name="typeDemande"]:checked')?.value,
+                
+                // Préférences de communication
+                preferencesComm: Array.from(document.querySelectorAll('input[type="checkbox"][id^="pref"]:checked')).map(cb => cb.value),
+                
+                // État d'urgence
+                urgence: urgenceActivee
+            };
+
+            // Ajouter les détails du projet si applicable
+            const typeSelected = data.typeDemande;
+            if (typeSelected === 'renseigne' || typeSelected === 'concret') {
+                data.detailsProjet = {
+                    typesSite: Array.from(document.querySelectorAll('#detailsProjet input[type="checkbox"]:checked')).map(cb => cb.value),
+                    budget: document.getElementById('budgetSlider').value,
+                    projetAssociatif: document.getElementById('projetAssociatif').checked,
+                    delai: document.getElementById('delai').value,
+                    description: document.getElementById('descriptionProjet').value
+                };
+            }
+
+            // Ajouter le champ libre si applicable
+            if (typeSelected === 'autre' || typeSelected === 'contact') {
+                data.demandeLibre = document.getElementById('demandeLibre').value;
+            }
+
+            return data;
+        }
+    </script>
+  
+</body>
+</html> 
