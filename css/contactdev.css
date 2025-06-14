@@ -1,0 +1,878 @@
+:root {
+    --primary-purple: #6667ab;
+    --dark-purple: #4a4b7c;
+    --accent-orange: #ff6b35;
+    --accent-yellow: #f7931e;
+    --brutalist-black: #000;
+    --brutalist-white: #fff;
+    --light-gray: #f8f9fa;
+    --shadow-brutal: 8px 8px 0px var(--brutalist-black);
+    --shadow-brutal-small: 4px 4px 0px var(--brutalist-black);
+    --border-brutal: 4px solid var(--brutalist-black);
+    --border-brutal-thick: 6px solid var(--brutalist-black);
+}
+
+/* Reset et base */
+* {
+    box-sizing: border-box;
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .montserrat-<uniquifier> {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: var(--brutalist-black);
+    background-color: var(--brutalist-white);
+    overflow-x: hidden;
+    padding-top: 100px; /* Plus d'espace depuis la navbar */
+    line-height: 1.6; /* Augmenté de 1.4 à 1.6 */
+}
+
+        .brutalist-border {
+            border: 4px solid var(--brutalist-black) !important;
+        }
+
+        .brutalist-shadow {
+            box-shadow: 8px 8px 0px var(--brutalist-black);
+        }
+
+        .brutalist-btn {
+            border: 3px solid var(--brutalist-black);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.2s ease;
+            box-shadow: 4px 4px 0px var(--brutalist-black);
+        }
+
+        .brutalist-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--brutalist-black);
+        }
+
+        .brutalist-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px var(--brutalist-black);
+        }
+
+        .btn-primary-custom {
+            background-color: var(--primary-purple);
+            color: white;
+            border-color: var(--brutalist-black);
+        }
+
+        .btn-primary-custom:hover {
+            background-color: var(--dark-purple);
+            color: white;
+            border-color: var(--brutalist-black);
+        }
+
+        .btn-outline-custom {
+            background-color: var(--brutalist-white);
+            color: var(--brutalist-black);
+            border-color: var(--brutalist-black);
+        }
+
+        .btn-outline-custom:hover {
+            background-color: var(--accent-orange);
+            color: white;
+            border-color: var(--brutalist-black);
+        }
+
+        /* Navbar */
+        .navbar-custom {
+            background-color: rgba(102, 103, 171, 0.9);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            border-bottom: 4px solid var(--brutalist-black);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-custom.scrolled {
+            background-color: rgba(102, 103, 171, 0.95);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 900;
+            font-size: 1.5rem;
+            color: var(--brutalist-white) !important;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logo-container {
+            background-color: var(--brutalist-white);
+            padding: 8px 12px;
+            border: 3px solid var(--brutalist-black);
+            box-shadow: 4px 4px 0px var(--brutalist-black);
+            transition: all 0.2s ease;
+        }
+
+        .navbar-brand:hover .logo-container {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--brutalist-black);
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--brutalist-white) !important;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0 10px;
+            padding: 8px 16px !important;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--brutalist-black) !important;
+            background-color: var(--brutalist-white);
+            border: 2px solid var(--brutalist-black);
+            transform: translate(-1px, -1px);
+            box-shadow: 3px 3px 0px var(--brutalist-black);
+        }
+
+        .navbar-toggler {
+            border: 3px solid var(--brutalist-white);
+            background-color: var(--brutalist-black);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .navbar-toggler-icon {
+            display: none;
+        }
+
+        .brutalist-burger {
+            width: 25px;
+            height: 3px;
+            background-color: var(--brutalist-white);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+
+
+/* Fond décoratif du body */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: 
+                linear-gradient(45deg, transparent 40%, rgba(102, 103, 171, 0.05) 40%, rgba(102, 103, 171, 0.05) 60%, transparent 60%),
+                linear-gradient(-45deg, transparent 40%, rgba(102, 103, 171, 0.03) 40%, rgba(102, 103, 171, 0.03) 60%, transparent 60%);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+
+        /* Container principal */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+        }
+
+      .card {
+    border: var(--border-brutal-thick) !important;
+    border-radius: 0 !important;
+    box-shadow: var(--shadow-brutal) !important;
+    background: var(--brutalist-white) !important;
+    transform: rotate(-0.5deg);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 12px 12px 0px var(--brutalist-black) !important;
+}
+
+.card:nth-child(even) {
+    transform: rotate(0.5deg);
+}
+
+.card:nth-child(even):hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+/* Headers de cards */
+.card-header {
+    text-transform: uppercase;
+    font-weight: 700 !important;
+    border: none !important;
+    border-bottom: var(--border-brutal) !important;
+    border-radius: 0 !important;
+    padding: 20px !important;
+    position: relative;
+}
+.card-header h4, .card-header h3 {
+    font-weight: 800 !important;
+}
+
+
+.card-header.bg-info {
+    background: var(--accent-yellow) !important;
+    color: var(--brutalist-black) !important;
+}
+
+.card-header.bg-primary {
+    background: var(--primary-purple) !important;
+    color: var(--brutalist-white) !important;
+}
+
+.card-header::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    background: var(--accent-orange);
+    border: 3px solid var(--brutalist-black);
+}
+
+/* Corps de cards */
+.card-body {
+    padding: 25px !important;
+    background: var(--brutalist-white);
+}
+
+/* ACCORDÉONS BRUTALISTES */
+.accordion {
+    border: none;
+}
+
+.accordion-item {
+    border: var(--border-brutal) !important;
+    border-radius: 0 !important;
+    margin-bottom: 15px !important;
+    background: var(--brutalist-white);
+    box-shadow: var(--shadow-brutal-small);
+}
+
+.accordion-button {
+    background: var(--accent-yellow) !important;
+    color: var(--brutalist-black) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    font-weight: 800 !important;
+    padding: 20px !important;
+    font-size: 16px !important;
+    box-shadow: none !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--accent-orange) !important;
+    color: var(--brutalist-white) !important;
+}
+
+.accordion-button::after {
+    background-image: none !important;
+    content: "▼" !important;
+    font-size: 20px;
+    font-weight: 900;
+    transform: none !important;
+}
+
+.accordion-button.collapsed::after {
+    content: "▶" !important;
+    transform: none !important;
+}
+
+.accordion-body {
+    background: var(--brutalist-white);
+    border-top: 3px solid var(--brutalist-black);
+    padding: 25px !important;
+}
+
+/* Sous-accordéons FAQ */
+.accordion-flush .accordion-item {
+    border: 2px solid var(--brutalist-black) !important;
+    margin-bottom: 10px !important;
+    box-shadow: 2px 2px 0px var(--brutalist-black);
+}
+
+.accordion-flush .accordion-button {
+    background: var(--light-gray) !important;
+    padding: 15px 10px !important;
+    font-size: 14px !important;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+/* ALERTES BRUTALISTES */
+.alert {
+    border: var(--border-brutal) !important;
+    border-radius: 0 !important;
+    box-shadow: var(--shadow-brutal-small) !important;
+    font-weight: 600 !important;
+    margin-bottom: 20px !important;
+    position: relative;
+    transform: rotate(-0.3deg);
+}
+
+.alert::before {
+    content: "!";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 25px;
+    height: 25px;
+    background: var(--accent-orange);
+    border: 3px solid var(--brutalist-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--brutalist-white);
+}
+
+.alert-light {
+    background: var(--brutalist-white) !important;
+    color: var(--brutalist-black) !important;
+    border-left: 8px solid var(--accent-yellow) !important;
+}
+
+.alert-success {
+    background: var(--primary-purple) !important;
+    color: var(--brutalist-white) !important;
+}
+
+.alert-info {
+    background: var(--accent-yellow) !important;
+    color: var(--brutalist-black) !important;
+}
+
+.alert-warning {
+    background: var(--accent-orange) !important;
+    color: var(--brutalist-white) !important;
+}
+
+/* FORMULAIRE BRUTALISTE */
+.form-label {
+    font-weight: 800 !important;
+    color: var(--brutalist-black) !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px !important;
+    font-size: 14px;
+}
+
+.form-control {
+    border: var(--border-brutal) !important;
+    border-radius: 0 !important;
+    padding: 15px !important;
+    font-weight: 600 !important;
+    background: var(--brutalist-white) !important;
+    box-shadow: inset 4px 4px 0px var(--light-gray) !important;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--accent-orange) !important;
+    box-shadow: inset 4px 4px 0px var(--accent-yellow), 0 0 0 3px var(--accent-orange) !important;
+    transform: translate(-2px, -2px);
+}
+
+.form-control::placeholder {
+    color: #666;
+    font-weight: 500;
+}
+
+/* Textarea spécial */
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* RADIO BUTTONS BRUTALISTES */
+.form-check {
+    margin-bottom: 15px !important;
+    padding: 15px !important;
+    border: 3px solid var(--brutalist-black);
+    background: var(--brutalist-white);
+    box-shadow: var(--shadow-brutal-small);
+    transform: rotate(-0.2deg);
+    transition: all 0.3s ease;
+}
+
+.form-check:hover {
+    transform: rotate(0deg);
+    background: var(--light-gray);
+}
+
+.form-check-input[type="radio"] {
+    width: 25px !important;
+    height: 25px !important;
+    border: 4px solid var(--brutalist-black) !important;
+    background: var(--brutalist-white) !important;
+    margin-top: 0 !important;
+    margin-right: 15px !important;
+}
+
+.form-check-input[type="radio"]:checked {
+    background: var(--accent-orange) !important;
+    border-color: var(--brutalist-black) !important;
+}
+
+.form-check-input[type="checkbox"] {
+    width: 20px !important;
+    height: 20px !important;
+    border: 3px solid var(--brutalist-black) !important;
+    border-radius: 0 !important;
+    margin-right: 10px !important;
+}
+
+.form-check-input[type="checkbox"]:checked {
+    background: var(--primary-purple) !important;
+    border-color: var(--brutalist-black) !important;
+}
+
+.form-check-label {
+    font-weight: 600 !important;
+    color: var(--brutalist-black) !important;
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+/* RANGE SLIDER BRUTALISTE */
+.form-range {
+    height: 15px !important;
+    background: var(--light-gray) !important;
+    border: 3px solid var(--brutalist-black) !important;
+    border-radius: 0 !important;
+    box-shadow: inset 2px 2px 0px #ccc;
+}
+
+.form-range::-webkit-slider-thumb {
+    width: 30px !important;
+    height: 30px !important;
+    background: var(--accent-orange) !important;
+    border: 3px solid var(--brutalist-black) !important;
+    border-radius: 0 !important;
+    box-shadow: 2px 2px 0px var(--brutalist-black);
+    cursor: pointer;
+}
+
+.form-range::-moz-range-thumb {
+    width: 30px !important;
+    height: 30px !important;
+    background: var(--accent-orange) !important;
+    border: 3px solid var(--brutalist-black) !important;
+    border-radius: 0 !important;
+    box-shadow: 2px 2px 0px var(--brutalist-black);
+    cursor: pointer;
+}
+
+/* BOUTONS BRUTALISTES */
+.btn {
+    border: var(--border-brutal) !important;
+    border-radius: 0 !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 25px !important;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-brutal-small) !important;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px var(--brutalist-black) !important;
+}
+
+.btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--brutalist-black) !important;
+}
+
+.btn-primary {
+    background: var(--primary-purple) !important;
+    color: var(--brutalist-white) !important;
+    border-color: var(--brutalist-black) !important;
+}
+
+.btn-primary:hover {
+    background: var(--dark-purple) !important;
+}
+
+.btn-warning {
+    background: var(--accent-yellow) !important;
+    color: var(--brutalist-black) !important;
+    border-color: var(--brutalist-black) !important;
+}
+
+.btn-danger {
+    background: var(--accent-orange) !important;
+    color: var(--brutalist-white) !important;
+    border-color: var(--brutalist-black) !important;
+}
+
+.btn-outline-secondary {
+    background: var(--brutalist-white) !important;
+    color: var(--brutalist-black) !important;
+    border-color: var(--brutalist-black) !important;
+}
+
+.btn-outline-secondary:hover {
+    background: var(--accent-yellow) !important;
+    color: var(--brutalist-black) !important;
+}
+
+/* Boutons budget */
+.budget-btn {
+    font-size: 12px !important;
+    padding: 8px 12px !important;
+    margin: 2px;
+}
+
+/* BOUTON URGENCE SPÉCIAL */
+#urgenceBtn {
+    font-size: 18px !important;
+    animation: urgencePulse 2s infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+#urgenceBtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+}
+
+#urgenceBtn:hover::before {
+    left: 100%;
+}
+
+@keyframes urgencePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* BADGES */
+.badge {
+    border: 2px solid var(--brutalist-black) !important;
+    border-radius: 0 !important;
+    font-weight: 800 !important;
+    padding: 8px 12px !important;
+}
+
+/* TITRES DE SECTIONS */
+h5.text-primary {
+    color: var(--primary-purple) !important;
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 4px solid var(--accent-orange) !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 20px !important;
+    position: relative;
+}
+
+h5.text-primary::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--accent-yellow);
+}
+
+/* VALIDATION ERRORS */
+.invalid-feedback {
+    background: var(--accent-orange);
+    color: var(--brutalist-white);
+    padding: 10px;
+    border: 2px solid var(--brutalist-black);
+    margin-top: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-control.is-invalid {
+    border-color: var(--accent-orange) !important;
+    box-shadow: inset 4px 4px 0px #ffccbc !important;
+}
+
+/* ICONES */
+.bi, .fas, .fab {
+    font-weight: 900;
+}
+
+/* RESPONSIVE BRUTALISTE */
+@media (max-width: 768px) {
+    .card {
+        transform: rotate(0deg);
+        margin-bottom: 25px;
+    }
+    
+    .card:hover {
+        transform: scale(1.01);
+    }
+    
+    .shadow-brutal, .shadow-brutal-small {
+        box-shadow: 4px 4px 0px var(--brutalist-black) !important;
+    }
+    
+    .btn {
+        padding: 12px 20px !important;
+        font-size: 14px !important;
+    }
+    
+    .form-control {
+        padding: 12px !important;
+    }
+    
+    .accordion-button {
+        padding: 15px !important;
+        font-size: 14px !important;
+    }
+    
+    .card-header::after {
+        width: 15px;
+        height: 15px;
+        top: -4px;
+        right: -4px;
+    }
+    
+    h5.text-primary {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .budget-btn {
+        font-size: 10px !important;
+        padding: 6px 8px !important;
+    }
+    
+    .form-check {
+        padding: 10px !important;
+    }
+    
+    .alert::before {
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+        top: -8px;
+        left: -8px;
+    }
+}
+
+/* Animation d'entrée pour les cards */
+@keyframes slideInBrutal {
+    from {
+        transform: translateX(-100px) rotate(-2deg);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) rotate(-0.5deg);
+        opacity: 1;
+    }
+}
+
+.card {
+    animation: slideInBrutal 0.6s ease-out;
+}
+
+.card:nth-child(even) {
+    animation: slideInBrutal 0.6s ease-out 0.2s both;
+}
+
+/* Effet de "tampon" sur les boutons */
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.3);
+    border-radius: 0;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+}
+
+.btn:active::after {
+    width: 100%;
+    height: 100%;
+}
+
+/* Style pour les liens dans les alertes */
+.alert a {
+    color: inherit !important;
+    text-decoration: underline !important;
+    font-weight: 900 !important;
+}
+
+/* Amélioration des focus states pour l'accessibilité */
+.btn:focus,
+.form-control:focus,
+.form-check-input:focus {
+    outline: 4px solid var(--accent-yellow) !important;
+    outline-offset: 2px !important;
+}
+
+/* Style pour les textes en small */
+small.text-muted {
+    color: #666 !important;
+    font-weight: 500 !important;
+}
+
+/* Style pour les spans de texte danger */
+.text-danger {
+    color: var(--accent-orange) !important;
+    font-weight: 900 !important;
+}
+
+
+
+  /* Footer - Style original conservé */
+.footer {
+    background-color: var(--primary-purple);
+    color: var(--brutalist-white);
+    padding: 30px 0 30px;
+    border-top: 5px solid var(--brutalist-black);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav a {
+    color: var(--brutalist-white);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+}
+
+.footer-nav a:hover {
+    color: var(--brutalist-black);
+    background-color: var(--brutalist-white);
+    border: 2px solid var(--brutalist-black);
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0px var(--brutalist-black);
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--brutalist-white);
+    color: var(--brutalist-black);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+    border: 3px solid var(--brutalist-black);
+    box-shadow: 4px 4px 0px var(--brutalist-black);
+}
+
+.social-link:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--brutalist-black);
+    color: var(--primary-purple);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 2px solid var(--brutalist-white);
+    font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    color: var(--accent-orange);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+         /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
+         
+      .footer-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .footer-nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            
+         
+        }
+
+        
